@@ -12,10 +12,9 @@ type Square struct {
 }
 
 func (s *Square) End() Point {
-	fmt.Println(s.start.x,s.start.y,s.a)
 	endPoint := Point{
 		x: s.start.x + int(s.a),
-		y: s.start.y - int(s.a),
+		y: s.start.y + int(s.a),
 	}
 	return endPoint
 }
